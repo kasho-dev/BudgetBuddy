@@ -4,7 +4,11 @@ import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Dashboard from './pages/dashboard'
 import Wallet from './pages/wallet'
+import Analytics from './pages/analytics'
+import Transactions from './pages/transactions'
 import Settings from './pages/settings'
+
+
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -41,6 +45,8 @@ function App() {
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/wallet" element={<Wallet />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/transactions" element={<Transactions />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>
       </main>

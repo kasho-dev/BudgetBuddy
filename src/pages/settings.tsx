@@ -2,7 +2,7 @@
 function settings() {
   return (
     <div>
-        <h1 className="text-2xl font-bold">Settings</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">Settings</h1>
     </div>
   )
 }
