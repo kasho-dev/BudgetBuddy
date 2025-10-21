@@ -26,7 +26,7 @@ export default function Sidebar({ title = "Budget Buddy", isOpen = false, onClos
 
   return (
     <aside
-      className={`fixed inset-y-0 left-0 z-50 w-64 p-4 bg-[#24282E] transform transition-transform duration-200 ease-in-out ${
+      className={`fixed inset-y-0 left-0 z-50 w-64 p-4 bg-[#1A2028] transform transition-transform duration-200 ease-in-out ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:translate-x-0 md:static md:w-60 md:block min-h-screen`}
       aria-hidden={!isOpen}
